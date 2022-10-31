@@ -15,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
-import com.system.crm.dto.ExampleDto;
+
 
 
 
@@ -39,7 +39,7 @@ public class AuthenticationController {
     
     @GetMapping("/hello")
     public ResponseEntity<?> example(){
-        return new ResponseEntity<>(new ExampleDto("Hello"), HttpStatus.OK);
+        return new ResponseEntity<>("message: Hello", HttpStatus.OK);
     }
 
 
