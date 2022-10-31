@@ -33,6 +33,12 @@ public class AuthenticationController {
         this.authenticationManager = authenticationManager;
         this.jwtTokenProvider = jwtTokenProvider;
     }
+    
+    
+    @GetMapping("/hello")
+    public ResponseEntity<?> example(){
+        return new ResponseEntity<>(new ExampleDto("Hello"), HttpStatus.OK);
+    }
 
 
 
