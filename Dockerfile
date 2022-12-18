@@ -1,5 +1,5 @@
-FROM suranagivinod/openjdk8
+FROM maven:3.6.3-jdk-8
   
-COPY ./project.jar .
+COPY target/crm-0.0.1-SNAPSHOT.jar .
 
-CMD ["java", "-jar", "project.jar"]
+CMD ["java", "-jar", "crm-0.0.1-SNAPSHOT.jar"]
